@@ -16,7 +16,7 @@ const ScoreScreen: React.FC = () => {
 
         setTimeout(() => {
             setMaxScore( answers.map( x => ( x.question.type === 'multiple' ) ? Number( 10 ) : Number( 5 ) ).reduce( (a, b) => a + b ) )
-            setScore( answers.map( x => ( x.answer === x.question.correct_answer ) ? 1 * ( ( x.question.category === 'multiple' ? 10 : 5 ) ) : 0 ).reduce( (a, b) => a + b ) )
+            setScore( answers.map( x => ( x.answer === x.question.correct_answer ) ? 1 * ( ( x.question.type === 'multiple' ? 10 : 5 ) ) : 0 ).reduce( (a, b) => a + b ) )
         }, 500);
  
         

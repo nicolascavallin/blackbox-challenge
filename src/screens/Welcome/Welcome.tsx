@@ -13,7 +13,7 @@ const WelcomeScreen: React.FC = () => {
 
             <Heading my={ 3 } color='gray.600' className='animate__animated animate__bounceInLeft' >Hey there!</Heading>
             
-            <Heading my={ 3 } color='blue.500' className='animate__animated animate__bounceInRight' >Are you ready for play?!</Heading>
+            <Heading my={ 3 } color='blue.500' className='animate__animated animate__bounceInRight' >Are you ready to play?!</Heading>
 
             <Image maxW={ 400 } src='./illustration_1.png' className='animate__animated animate__fadeIn' />
 
